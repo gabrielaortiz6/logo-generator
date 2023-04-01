@@ -1,0 +1,29 @@
+{
+  "name": "logo-generator",
+  "version": "1.0.0",
+  "description": "\"this application creates logos by rendering an svg file\"",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielaortiz6/logo-generator.git"
+  },
+  "author": "gabriela ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielaortiz6/logo-generator/issues"
+  },
+  "homepage": "https://github.com/gabrielaortiz6/logo-generator#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.5"
+  }
+}
