@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-//const generateSVG = require('./generateSVG');
+const generateSVG = require('./lib/generateSVG');
 
 const questions = [
     {
@@ -11,7 +11,7 @@ const questions = [
     {
         type: 'input',
         message: 'Enter a color or hex code for the text color',
-        name: 'text-color',
+        name: 'textColor',
     },
     {
         type: 'list',
@@ -22,7 +22,7 @@ const questions = [
     {
         type: 'input',
         message: 'Enter a color or a hex code for the color of the shape',
-        name: 'shape-color',
+        name: 'shapeColor',
     },
 ];
 
@@ -37,8 +37,12 @@ function init() {
         console.log(response);
         const data = JSON.stringify(response, null, 1);
         writeToFile('response.json', data);
-        //const readmeContent = generateMarkdown(JSON.parse(data));
-        //writeToFile('README.md', readmeContent);
+        const svgFileContent = generateSVG(JSON.parse(data));
+        writeToFile(`${this.shape}.svg`, svgFileContent);
+
+        console.log(svgMarkup); // Output the SVG markup to the console
+
+       //fs.writeFileSync('output.svg', svgMarkup); // Save the SVG to a file
     })
         .catch((err) => {
             console.error(err);
