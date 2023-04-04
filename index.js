@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateSVG = require('./lib/generateSVG');
+const generateSVG = require('./generateSVG');
 
 const questions = [
     {
@@ -40,7 +40,7 @@ function init() {
         const svgFileContent = generateSVG(JSON.parse(data));
         writeToFile(`${this.shape}.svg`, svgFileContent);
 
-        console.log(svgMarkup); // Output the SVG markup to the console
+       // console.log(svgMarkup); // Output the SVG markup to the console
 
        //fs.writeFileSync('output.svg', svgMarkup); // Save the SVG to a file
     })

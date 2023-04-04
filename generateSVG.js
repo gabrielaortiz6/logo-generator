@@ -3,7 +3,7 @@ function generateSVG (data) {
     let svgString;
     let width;
     let height;
-    let text = answers.text ? answers.text.trim() : null;
+    let text = data.text ? data.text.trim() : null;
 
     switch (data.shape) {
         case 'Square':
@@ -43,3 +43,5 @@ function generateSVG (data) {
     }
 
 }
+
+module.exports = generateSVG;
