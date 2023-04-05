@@ -2,6 +2,7 @@
 
 ## Description
 
+This project creates a command line app that will generate a logo based on a few user inputs, namely text, text color, shape, and shape color. After the user has entered their responses, a .svg file is created using these inputs, which can then be viewed in a browser. This app uses inquirer for the prompts and jest for testing. 
 
 ### User Story
 
@@ -31,3 +32,5 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
 
 ## Mock-Up
+
+![Google Drive Video](https://drive.google.com/file/d/1c0NiFTop-87JJhRRNY-33uFRt2pCV8_B/view)

@@ -1,6 +1,6 @@
 
-      <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="100" fill="pink" />
-        <text x="50%" y="50%" text-anchor="middle" fill="white">gmo</text>
+      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="200" fill="black" />
+        <text x="50%" y="50%" text-anchor="middle" fill="blue">gmo</text>
         </svg>
     

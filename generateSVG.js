@@ -5,8 +5,8 @@ function generateSVG (data) {
 
     switch (data.shape) {
         case 'Square':
-            width = 100;
-            height = 100;
+            width = 200;
+            height = 200;
             return `
       <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
         <rect width="${width}" height="${height}" fill="${data.shapeColor}" />
@@ -16,7 +16,7 @@ function generateSVG (data) {
             break;
 
         case 'Circle':
-            width = height = 200;
+            width = height = 300;
             return `
       <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
         <circle cx="${width / 2}" cy="${height / 2}" r="${width / 2}" fill="${data.shapeColor}" />
