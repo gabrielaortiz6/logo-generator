@@ -34,3 +34,5 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ## Mock-Up
 
 ![Google Drive Video](https://drive.google.com/file/d/1c0NiFTop-87JJhRRNY-33uFRt2pCV8_B/view)
+
+![Sample logo](/Users/marilinlago/Desktop/bootcamp/weekly-challenges/logo-generator/examples/screenshot.png)
