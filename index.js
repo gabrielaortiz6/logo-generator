@@ -28,21 +28,19 @@ const questions = [
 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-        err ? console.error(err) : console.log('File was created!')
-    );
-};
-
+        err ? console.error(err) : console.log(`Generated ${fileName}`),
+        );
+    };
+    
 function init() {
     inquirer.prompt(questions).then(response => {
         console.log(response);
         const data = JSON.stringify(response, null, 1);
         writeToFile('response.json', data);
         const svgFileContent = generateSVG(JSON.parse(data));
-        //writeToFile(`${this.shape}.svg`, svgFileContent);
-
+        
         console.log(svgFileContent); // Output the SVG markup to the console
-
-       //fs.writeFileSync('output.svg', svgMarkup); // Save the SVG to a file
+        writeToFile(`logo.svg`, svgFileContent);
     })
         .catch((err) => {
             console.error(err);
