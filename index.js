@@ -38,9 +38,9 @@ function init() {
         const data = JSON.stringify(response, null, 1);
         writeToFile('response.json', data);
         const svgFileContent = generateSVG(JSON.parse(data));
-        writeToFile(`${this.shape}.svg`, svgFileContent);
+        //writeToFile(`${this.shape}.svg`, svgFileContent);
 
-       // console.log(svgMarkup); // Output the SVG markup to the console
+        console.log(svgFileContent); // Output the SVG markup to the console
 
        //fs.writeFileSync('output.svg', svgMarkup); // Save the SVG to a file
     })
