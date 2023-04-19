@@ -33,6 +33,6 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 ## Mock-Up
 
-![Google Drive Video](https://drive.google.com/drive/u/0/my-drive)
+![Google Drive Video](https://drive.google.com/file/d/11SxcIcEoqqcvTIQ-KoBg1VL7vPQee9Ad/view)
 
-![Sample logo](/Users/marilinlago/Desktop/bootcamp/weekly-challenges/logo-generator/examples/screenshot.png)
+![Sample logo](/Users/marilinlago/Desktop/bootcamp/weekly-challenges/logo-generator/examples/screenshotlogo.png)
