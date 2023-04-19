@@ -2,7 +2,9 @@
 
 ## Description
 
-This project creates a command line app that will generate a logo based on a few user inputs, namely text, text color, shape, and shape color. After the user has entered their responses, a .svg file is created using these inputs, which can then be viewed in a browser. This app uses inquirer for the prompts and jest for testing. 
+This project creates a command line app for people who would like to easily generate simple logos quickly and without the hassle of having to hire a graphic designer. Only a few user inputs are required, namely text, text color, shape, and shape color. After the user has entered their responses, a .svg file is created using these inputs, which can then be viewed in a browser. 
+
+This app uses inquirer for the prompts and jest for testing. 
 
 ### User Story
 
@@ -30,6 +32,8 @@ AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
+## Installation 
+In order to install this application, clone the repository from GitHub (linked below). Then, to run the it, use the command 'node index.'
 
 ## Mock-Up
 
